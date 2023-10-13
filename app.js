@@ -1,65 +1,68 @@
-const rubicon_char [
+const mcdonalds_menu = [
 
     {
-      name: "c4_621",
-      nickname: ["621", "Raven"],
-      affiliation: "independent",
-      character_alignment_opinion: "true_neutral"
 
-};
+        item_name:"mcnuggets",
+        variants:["4 piece", "6 piece"],
+        price:
+        {
+                four_piece: "$2.99",
+                six_piece: "$3.99"
+        },
+        yummy: true
 
+    },
+    
     {
-      name: "carla",
-      nickname: "cinder",
-      affiliation: "dosers",
-      character_alignment_opinion: ""
 
-};
+        item_name:"quarter pounder",
+        variants:["plain", "with cheese", "with cheese bacon", "double patty", "double patty with cheese", "double patty with cheese bacon"],
+        price:
+        {
+            plain: "$4.99",
+            with_cheese: "$5.49",
+            with_cheese_bacon: "$5.69",
+            double_patty: "$5.99",
+            double_patty_with_cheese: "$6.49",
+            double_patty_with_cheese_bacon:"$6.69"
+        },
+        yummy: true
 
+    },
+    
     {
-      name: "handler_walter",
-      nickname: "n/a",
-      ,
-      affiliation: "independent",
-      character_alignment_opinion: ""
 
-};
+        item_name:"fries",
+        variants:["small","medium","large"],
+        price:
+        {
+
+            small: "$2.99",
+            medium: "$3.99",
+            large: "$4.99",
+
+        },
+        yummy: true
+
+    },
+    
     {
-      name: "ayre",
-      nickname: "n/a",
-      ,
-      affiliation: "rubinconians",
-      character_alignment_opinion: "unknown"
 
-};
-    {
-      name: "g1_michigan",
-      nickname: "n/a",
-      ,
-      affiliation: "balam",
-      character_alignment_opinion: "chaotic_neutral"
+        item_name:"mccrispy",
+        variants:["normal","spicy"],
+        price:
+        {
 
-};
-    {
-      name: "g6_red";
-      nickname: "n/a",
-      ,
-      affiliation: "balam",
-      character_alignment_opinion: "neutral evil"
+            normal: "$4.99",
+            crispy: "$5.49",
 
-};
-    {
-      name: "v_iv_rusty",
-      nickname: "n/a",
-      ,
-      affiliation: "arquebus",
-      character_alignment_opinion: "lawful neutral"
+        },
+        yummy: true
 
-};
-    { 
-      name: "v_vii_swinburne",
-      nickname: "n/a",
-      ,
-      affiliation: "arquebus",
-      character_alignment_opinion: ""
-}];
+    },
+
+];
+
+mcdonalds_menu.forEach((attr)=> console.log(attr.item_name));
+mcdonalds_menu.forEach((variant)=> variant.variants.forEach((variant_selection)=> console.log(variant_selection)));
+mcdonalds_menu.forEach((attr)=> attr.price.forEach((price_of_item)=> console.log(price_of_item)));
