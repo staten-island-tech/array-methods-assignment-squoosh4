@@ -17,7 +17,7 @@ const mcdonalds_menu = [
       "with cheese bacon",
       "double patty",
       "double patty with cheese",
-      "double patty with cheese bacon",
+      "double patty with cheese bacon", 
     ],
     price: [
       "plain: $4.99",
@@ -59,5 +59,5 @@ mcdonalds_menu.forEach((attr) =>
   attr.price.forEach((price_of_item) => console.log(price_of_item))
 );
 
-const bad_food = mcdonalds_menu.filter((mcdonalds_menu)=> mcdonalds_menu.yummy === false);
+const bad_food = mcdonalds_menu.filter((mcdonalds_menu)=> mcdonalds_menu.yummy == false);
 console.log(bad_food);
